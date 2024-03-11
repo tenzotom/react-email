@@ -59,7 +59,7 @@ export const exportTemplates = async (
     entryPoints: allTemplates,
     platform: 'node',
     format: 'cjs',
-    loader: { '.js': 'jsx' },
+    loader: { '.js': 'jsx', '.node': 'file' },
     outExtension: { '.js': '.cjs' },
     jsx: 'transform',
     write: true,

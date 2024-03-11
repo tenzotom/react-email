@@ -31,6 +31,7 @@ export const getEmailComponent = async (
       // allows for using jsx on a .js file
       loader: {
         '.js': 'jsx',
+        '.node': 'file',
       },
       outdir: 'stdout', // just a stub for esbuild, it won't actually write to this folder
       sourcemap: 'external',
